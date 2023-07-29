@@ -17,10 +17,10 @@ function db_conn(){
 
         //localhost以外＊＊自分で書き直してください！！＊＊
         if($_SERVER["HTTP_HOST"] != 'localhost'){
-            $db_name = "";  //データベース名
-            $db_id   = "";  //アカウント名（さくらコントロールパネルに表示されています）
-            $db_pw   = "";  //パスワード(さくらサーバー最初にDB作成する際に設定したパスワード)
-            $db_host = "localhost"; //例）mysql**db.ne.jp...
+            $db_name = "aya-17-ms_gs_bm";  //データベース名
+            $db_id   = "aya-17-ms";  //アカウント名（さくらコントロールパネルに表示されています）
+            $db_pw   = "1287Tmam";  //パスワード(さくらサーバー最初にDB作成する際に設定したパスワード)
+            $db_host = "mysql57.aya-17-ms.sakura.ne.jp"; //例）mysql**db.ne.jp...
         }
         //今からここに接続するよ↓　できたpdoを返しますよ
         return new PDO('mysql:dbname=aya-17-ms_gs_bm;charset=utf8;host=mysql57.aya-17-ms.sakura.ne.jp, aya-17-ms, 1287Tmam');
