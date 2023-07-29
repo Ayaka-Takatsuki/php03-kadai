@@ -23,7 +23,7 @@ function db_conn(){
             $db_host = "localhost"; //例）mysql**db.ne.jp...
         }
         //今からここに接続するよ↓　できたpdoを返しますよ
-        return new PDO('mysql:dbname='.$db_name.';charset=utf8;host='.$db_host, $db_id, $db_pw);
+        return new PDO('mysql:dbname=aya-17-ms_aya-17-ms_gs_bm;charset=utf8;host=mysql57.aya-17-ms.sakura.ne.jp, aya-17-ms, 1287Tmam');
     } catch (PDOException $e) {
         exit('DB Connection Error:'.$e->getMessage());
     }
